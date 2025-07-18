@@ -1,0 +1,9 @@
+Creative Commons Attribution-NonCommercial 4.0 International
+
+Ez a projekt a CC BY-NC 4.0 licenc alá tartozik.
+
+✔️ Szabadon másolhatod, terjesztheted, bemutathatod a tartalmat  
+❌ DE csak **nem kereskedelmi célra**,  
+🔗 És **meg kell jelölnöd az eredeti készítőket**: ImreCodex és Chati
+
+A teljes licenc angolul elérhető itt: https://creativecommons.org/licenses/by-nc/4.0/
