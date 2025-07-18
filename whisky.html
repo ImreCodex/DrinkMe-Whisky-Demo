@@ -1,0 +1,36 @@
+<body>
+   <script src="whisky.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <h1>Válassz egy whiskyt</h1>
+
+  <div class="language-switch">
+    <button onclick="setLanguage('hu')">🇭🇺</button>
+    <button onclick="setLanguage('en')">🇬🇧</button>
+  </div>
+
+  <div id="card-container">
+    <!-- Itt jelenik meg az aktuális whisky -->
+    <div class="whisky-card" onclick="window.location.href='whisky.html#2'"><img src="images/jack_daniels.jpg" alt="Jack Daniels"><p>Jack Daniels</p></div>
+    <div class="whisky-card" onclick="window.location.href='whisky.html#15'"><img src="images/ballantines.jpg" alt="Ballantine's"><p>Ballantine's</p></div>
+    <div class="whisky-card" onclick="window.location.href='whisky.html#16'"><img src="images/chivas_regal.jpg" alt="Chivas Regal"><p>Chivas Regal</p></div>
+  </div>
+
+  <div class="nav-buttons">
+  <button onclick="previousCard()">⬅️ Előző</button>
+  <button onclick="nextCard()">Következő ➡️</button>
+  <button onclick="window.location.href='index.html'" style="
+    margin-left: 20px;
+    background-color: #f5c542;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(245, 197, 66, 0.4);
+    transition: background-color 0.3s ease;
+  ">🏠 Vissza a Főmenüre</button>
+  </div>
+
+</body>

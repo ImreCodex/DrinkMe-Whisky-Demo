@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DrinkMe – Whisky Választó</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #f5c542;
+      margin-bottom: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .whisky-card {
+      background-color: #2e2e2e;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(245, 197, 66, 0.3);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+
+    .whisky-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(245, 197, 66, 0.6);
+    }
+
+    .whisky-card img {
+      width: 60px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .whisky-card p {
+      margin: 0;
+      color: #f0f0f0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="language-switch">
+    <button onclick="setLanguage('hu')">🇭🇺</button>
+    <button onclick="setLanguage('en')">🇬🇧</button>
+  </div>
+
+  <div id="card-container">
+    <!-- Itt jelenik meg az aktuális whisky -->
+  </div>
+
+  <div class="nav-buttons">
+    <button onclick="previousCard()">⬅️ Előző</button>
+    <button onclick="nextCard()">Következő ➡️</button>
+  </div>
+
+  <script src="whisky.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <h1>Válassz egy whiskyt</h1>
+  <div class="grid-container">
+    <div class="whisky-card" onclick="window.location.href='whisky.html#2'"><img src="images/jack_daniels.jpg" alt="Jack Daniels"><p>Jack Daniels</p></div>
+    <div class="whisky-card" onclick="window.location.href='whisky.html#15'"><img src="images/ballantines.jpg" alt="Ballantine's"><p>Ballantine's</p></div>
+    <div class="whisky-card" onclick="window.location.href='whisky.html#16'"><img src="images/chivas_regal.jpg" alt="Chivas Regal"><p>Chivas Regal</p></div>
+  </div>
+</body>
+</html>
