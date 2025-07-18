@@ -21,7 +21,7 @@ Ez a projekt a DrinkMe koktélkatalógus testvérprojektje, amely a legikonikusa
 ---
 
 ## 🌐 Élő demó:
-🔗 hamarosan: `https://drinkme-whisky-demo.netlify.app/`
+🔗 elérhető: https://drinkme-whisky-demo.netlify.app
 
 ---
 
